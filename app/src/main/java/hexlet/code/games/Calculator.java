@@ -30,13 +30,13 @@ public class Calculator {
             randomNumSecond = (int) (Math.random() * 100);
 
             if (operation == 3) {
-                en.setQuestion(randomNumFirst + "+" + randomNumSecond);
+                en.setQuestion(randomNumFirst + " + " + randomNumSecond);
                 en.setRightAnswer(Integer.toString(randomNumFirst + randomNumSecond));
             } else if (operation == 2) {
-                en.setQuestion(randomNumFirst + "*" + randomNumSecond);
+                en.setQuestion(randomNumFirst + " * " + randomNumSecond);
                 en.setRightAnswer(Integer.toString(randomNumFirst * randomNumSecond));
             } else {
-                en.setQuestion(randomNumFirst + "-" + randomNumSecond);
+                en.setQuestion(randomNumFirst + " - " + randomNumSecond);
                 en.setRightAnswer(Integer.toString(randomNumFirst - randomNumSecond));
             }
 
