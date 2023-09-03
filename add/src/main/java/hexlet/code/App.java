@@ -21,7 +21,6 @@ public class App {
 
     public static void main(String[] args) {
         chooseGame();
-
     }
 
     static void chooseGame() {

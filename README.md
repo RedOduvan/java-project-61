@@ -4,5 +4,22 @@
 
 ### Example run
 
+#### Even
 ![Image fail](https://github.com/RedOduvan/java-project-61/blob/main/add/pictures/run_even_fail.png)
 ![Image success](https://github.com/RedOduvan/java-project-61/blob/main/add/pictures/run_even_success.png)
+
+#### Calculator
+![Image fail](https://github.com/RedOduvan/java-project-61/blob/main/add/pictures/run_calculator_fail.png)
+![Image success](https://github.com/RedOduvan/java-project-61/blob/main/add/pictures/run_calculator_success.png)
+
+#### Gcd
+![Image fail](https://github.com/RedOduvan/java-project-61/blob/main/add/pictures/run_gcd_fail.png)
+![Image success](https://github.com/RedOduvan/java-project-61/blob/main/add/pictures/run_gcd_success.png)
+
+#### Progression
+![Image fail](https://github.com/RedOduvan/java-project-61/blob/main/add/pictures/run_progression_fail.png)
+![Image success](https://github.com/RedOduvan/java-project-61/blob/main/add/pictures/run_progression_success.png)
+
+#### Prime
+![Image fail](https://github.com/RedOduvan/java-project-61/blob/main/add/pictures/run_prime_fail.png)
+![Image success](https://github.com/RedOduvan/java-project-61/blob/main/add/pictures/run_prime_success.png)
