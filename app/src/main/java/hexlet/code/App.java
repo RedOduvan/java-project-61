@@ -8,8 +8,8 @@ import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 
-public class App {
-    private String nameUser;
+public final class App {
+    String nameUser;
 
     public String getNameUser() {
         return nameUser;
