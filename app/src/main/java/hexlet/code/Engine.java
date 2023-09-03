@@ -2,19 +2,19 @@ package hexlet.code;
 
 import java.util.Scanner;
 
-public class Engine {
-    String question;
-    String rightAnswer;
-    String inputAnswer;
-    String nameUser;
-    int score;
-    final int maxRepeat;
+public final class Engine {
+    private String question;
+    private String rightAnswer;
+    private String inputAnswer;
+    private String nameUser;
+    private int score;
+    private final int maxRepeat;
 
     {
         maxRepeat = 3;
     }
 
-    boolean exitLoop;
+    private boolean exitLoop;
 
     public String getInputAnswer() {
         return inputAnswer;

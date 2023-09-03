@@ -18,14 +18,15 @@ public class Gcd {
     public static void run(String nameUser) {
         int randomNumFirst;
         int randomNumSecod;
+        final int randomMult = 1000;
         Engine en = new Engine();
         en.setNameUser(nameUser);
         System.out.println("Find the greatest common divisor of given numbers.");
 
         en.setExitLoop(true);
         while (en.isExitLoop()) {
-            randomNumFirst = (int) (Math.random() * 1000);
-            randomNumSecod = (int) (Math.random() * 1000);
+            randomNumFirst = (int) (Math.random() * randomMult);
+            randomNumSecod = (int) (Math.random() * randomMult);
             en.setQuestion(randomNumFirst + " " + randomNumSecod);
             en.setRightAnswer(String.valueOf(gcd(randomNumFirst, randomNumSecod)));
 

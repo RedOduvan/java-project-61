@@ -7,13 +7,14 @@ import hexlet.code.Engine;
 public class Even {
     public static void run(String nameUser) {
         int randomNum;
+        final int randomMult = 100;
         Engine en = new Engine();
         en.setNameUser(nameUser);
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
         en.setExitLoop(true);
         while (en.isExitLoop()) {
-            randomNum = (int) (Math.random() * 100);
+            randomNum = (int) (Math.random() * randomMult);
             en.setQuestion(String.valueOf(randomNum));
             en.setRightAnswer("no");
             if ((randomNum % 2) == 0) {

@@ -3,13 +3,14 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 
 public class Calculator {
-    static int getOperation() {
-        int randomNum = (int) (Math.random() * 10);
-        int result = 1;
+    static String getOperation() {
+        final int randomMult = 10;
+        int randomNum = (int) (Math.random() * randomMult);
+        String result = "-";
         if ((randomNum % 3) == 0) {
-            result = 3;
+            result = "+";
         } else if ((randomNum % 2) == 0) {
-            result = 2;
+            result = "*";
         }
 
         return result;
@@ -17,7 +18,8 @@ public class Calculator {
     public static void run(String nameUser) {
         int randomNumFirst;
         int randomNumSecond;
-        int operation;
+        String operation;
+        final int randomMult = 100;
         Engine en = new Engine();
         en.setNameUser(nameUser);
         System.out.println("What is the result of the expression?");
@@ -26,13 +28,13 @@ public class Calculator {
         while (en.isExitLoop()) {
             operation = getOperation();
 
-            randomNumFirst = (int) (Math.random() * 100);
-            randomNumSecond = (int) (Math.random() * 100);
+            randomNumFirst = (int) (Math.random() * randomMult);
+            randomNumSecond = (int) (Math.random() * randomMult);
 
-            if (operation == 3) {
+            if (operation.equals("+")) {
                 en.setQuestion(randomNumFirst + " + " + randomNumSecond);
                 en.setRightAnswer(Integer.toString(randomNumFirst + randomNumSecond));
-            } else if (operation == 2) {
+            } else if (operation.equals("*")) {
                 en.setQuestion(randomNumFirst + " * " + randomNumSecond);
                 en.setRightAnswer(Integer.toString(randomNumFirst * randomNumSecond));
             } else {

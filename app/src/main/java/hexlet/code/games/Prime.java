@@ -16,13 +16,14 @@ public class Prime {
     }
     public static void run(String nameUser) {
         int randomNum;
+        final int randomMult = 1000;
         Engine en = new Engine();
         en.setNameUser(nameUser);
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
 
         en.setExitLoop(true);
         while (en.isExitLoop()) {
-            randomNum = (int) (Math.random() * 1000);
+            randomNum = (int) (Math.random() * randomMult);
             en.setQuestion(String.valueOf(randomNum));
             en.setRightAnswer("no");
             if (isSimple(randomNum)) {

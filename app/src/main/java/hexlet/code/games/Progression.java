@@ -7,16 +7,17 @@ public class Progression {
         int randomPosition;
         int randomNumPlus;
         int randomNumStart;
-        int lengthProgress = 10;
+        final int lengthProgress = 10;
+        final int randomMult = 10;
         Engine en = new Engine();
         en.setNameUser(nameUser);
         System.out.println("What number is missing in the progression?");
 
         en.setExitLoop(true);
         while (en.isExitLoop()) {
-            randomPosition = (int) (Math.random() * 10);
-            randomNumPlus = (int) (Math.random() * 10);
-            randomNumStart = (int) (Math.random() * 10);
+            randomPosition = (int) (Math.random() * randomMult);
+            randomNumPlus = (int) (Math.random() * randomMult);
+            randomNumStart = (int) (Math.random() * randomMult);
 
             en.setQuestion(String.valueOf(randomNumStart));
             for (int i = 0; i < lengthProgress; i++) {
