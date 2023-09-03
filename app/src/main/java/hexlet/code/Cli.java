@@ -10,6 +10,6 @@ public class Cli {
         //App userApp = new App();
         userApp.setNameUser(scan.nextLine());
 
-        System.out.println("Hello, " + userApp.getNameUser());
+        System.out.println("Hello, " + userApp.getNameUser() + "!");
     }
 }
