@@ -42,15 +42,14 @@ public class App {
         Cli.sayHello(userApp);
 
         switch (miniGame) {
-            case ("1") -> Cli.sayHello(userApp);
+            case ("0"), ("1") -> {
+                break;
+            }
             case ("2") -> Even.run(userApp.getNameUser());
             case ("3") -> Calculator.run(userApp.getNameUser());
             case ("4") -> Gcd.run(userApp.getNameUser());
             case ("5") -> Progression.run(userApp.getNameUser());
             case ("6") -> Prime.run(userApp.getNameUser());
-            case ("0") -> {
-                break;
-            }
             default -> System.out.println("It's wrong option!");
         }
     }
