@@ -15,7 +15,7 @@ public class App {
         return nameUser;
     }
 
-    public void setNameUser(String nameUser) {
+    public void setNameUser (String nameUser) {
         this.nameUser = nameUser;
     }
 
