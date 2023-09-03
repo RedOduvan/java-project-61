@@ -8,11 +8,7 @@ public final class Engine {
     private String inputAnswer;
     private String nameUser;
     private int score;
-    private final int maxRepeat;
-
-    {
-        maxRepeat = 3;
-    }
+    private final int maxRepeat = 3;
 
     private boolean exitLoop;
 
@@ -20,8 +16,8 @@ public final class Engine {
         return inputAnswer;
     }
 
-    public void setInputAnswer(String inputAnswer) {
-        this.inputAnswer = inputAnswer;
+    public void setInputAnswer(String val) {
+        this.inputAnswer = val;
     }
 
     public int getScore() {
@@ -36,32 +32,32 @@ public final class Engine {
         return question;
     }
 
-    public void setQuestion(String question) {
-        this.question = question;
+    public void setQuestion(String val) {
+        this.question = val;
     }
 
     public String getRightAnswer() {
         return rightAnswer;
     }
 
-    public void setRightAnswer(String rightAnswer) {
-        this.rightAnswer = rightAnswer;
+    public void setRightAnswer(String val) {
+        this.rightAnswer = val;
     }
 
     public boolean isExitLoop() {
         return exitLoop;
     }
 
-    public void setExitLoop(boolean exitLoop) {
-        this.exitLoop = exitLoop;
+    public void setExitLoop(boolean val) {
+        this.exitLoop = val;
     }
 
     public String getNameUser() {
         return nameUser;
     }
 
-    public void setNameUser(String nameUser) {
-        this.nameUser = nameUser;
+    public void setNameUser(String val) {
+        this.nameUser = val;
     }
 
     public static void askQuestion(Engine en) {

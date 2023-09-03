@@ -15,8 +15,8 @@ public final class App {
         return nameUser;
     }
 
-    public void setNameUser(String nameUser) {
-        this.nameUser = nameUser;
+    public void setNameUser(String val) {
+        this.nameUser = val;
     }
 
     public static void main(String[] args) {
