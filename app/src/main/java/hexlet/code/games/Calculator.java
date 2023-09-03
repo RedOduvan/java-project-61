@@ -5,11 +5,13 @@ import hexlet.code.Engine;
 public class Calculator {
     static String getOperation() {
         final int randomMult = 10;
+        final int randomPlus = 3;
+        final int randomMulti = 2;
         int randomNum = (int) (Math.random() * randomMult);
         String result = "-";
-        if ((randomNum % 3) == 0) {
+        if ((randomNum % randomPlus) == 0) {
             result = "+";
-        } else if ((randomNum % 2) == 0) {
+        } else if ((randomNum % randomMulti) == 0) {
             result = "*";
         }
 

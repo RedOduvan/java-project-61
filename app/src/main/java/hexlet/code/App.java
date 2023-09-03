@@ -9,7 +9,7 @@ import hexlet.code.games.Prime;
 import java.util.Scanner;
 
 public final class App {
-    String nameUser;
+    private String nameUser;
 
     public String getNameUser() {
         return nameUser;
